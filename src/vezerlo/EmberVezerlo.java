@@ -14,7 +14,7 @@ public class EmberVezerlo {
         this.nezet = new EmberNezet();
 
         modell.nyelvetTanul("Angol");
-        this.nezet.kiiras(this.modell.getBemutatkozassSzoveg());
+        this.nezet.kiiras(this.modell.getBemutatkozasSzoveg());
     }
 
 }
