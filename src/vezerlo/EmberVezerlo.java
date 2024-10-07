@@ -1,6 +1,5 @@
 package vezerlo;
 
-import java.util.ArrayList;
 import modell.Ember;
 import nezet.EmberNezet;
 
@@ -10,14 +9,12 @@ public class EmberVezerlo {
     EmberNezet nezet;
 
     public EmberVezerlo() {
-        ArrayList<String> nyelvek = new ArrayList();
-        nyelvek.add("Angol");
-        nyelvek.add("Magyar");
 
-        this.modell = new Ember("Józsi", 23, nyelvek, true);
+        this.modell = new Ember("Józsi", 23, true);
         this.nezet = new EmberNezet();
 
-        this.nezet.kiiras(this.modell.bemuatatkozás());
+        modell.nyelvetTanul("Angol");
+        this.nezet.kiiras(this.modell.getBemutatkozassSzoveg());
     }
 
 }
