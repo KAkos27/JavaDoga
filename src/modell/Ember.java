@@ -34,7 +34,11 @@ public class Ember {
 
     }
 
-    public String getBemutatkozassSzoveg() {
+    public void oregszik() {
+        this.kor++;
+    }
+
+    public String getBemutatkozasSzoveg() {
 
         String szoveg = "Szia, a nevem: ";
         szoveg += this.nev + "\nA korom: ";
